@@ -60,7 +60,7 @@ export default function DashboardPage() {
       const timer = setTimeout(() => {
         searchMovies(localSearchQuery, 1);
         setIsSearching(false);
-      }, 500);
+      }, 1000);
 
       return () => clearTimeout(timer);
     } else {
