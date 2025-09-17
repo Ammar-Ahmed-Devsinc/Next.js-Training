@@ -63,7 +63,7 @@ export default function FavoritesPage() {
             </p>
             <button
               onClick={handleBack}
-              className="bg-gradient-to-br from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 mx-auto transition-all duration-300 hover:shadow-2xl hover:-translate-y-0.5 hover:shadow-purple-500/30"
+              className="bg-gradient-to-br cursor-pointer from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 mx-auto transition-all duration-300 hover:shadow-2xl hover:-translate-y-0.5 hover:shadow-purple-500/30"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -82,7 +82,7 @@ export default function FavoritesPage() {
         <div className="flex items-center mb-8 gap-3">
           <button
             onClick={handleBack}
-            className="text-gray-400 hover:text-white p-2 rounded-full hover:bg-purple-700/30 transition-all duration-300"
+            className="text-gray-400 cursor-pointer hover:text-white p-2 rounded-full hover:bg-purple-700/30 transition-all duration-300"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />

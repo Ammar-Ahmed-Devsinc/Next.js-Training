@@ -92,7 +92,7 @@ export default function TrendingPage() {
         <div className="flex items-center mb-8 gap-3">
           <button
             onClick={handleBack}
-            className="text-gray-400 hover:text-white p-2 rounded-full hover:bg-purple-700/30 transition-all duration-300"
+            className="text-gray-400 cursor-pointer hover:text-white p-2 rounded-full hover:bg-purple-700/30 transition-all duration-300"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -145,7 +145,7 @@ export default function TrendingPage() {
 
                           {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="bg-gradient-to-br from-purple-600 to-pink-600 text-white px-4 py-2 rounded-xl font-semibold flex items-center gap-2">
+                  <button className="bg-gradient-to-br cursor-pointer from-purple-600 to-pink-600 text-white px-4 py-2 rounded-xl font-semibold flex items-center gap-2">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                       <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />

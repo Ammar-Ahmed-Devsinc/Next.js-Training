@@ -155,7 +155,7 @@ export default function MovieDetailPage({ params }: { params: { id: string } }) 
         <div className="flex items-center mb-8 gap-4">
           <button
             onClick={handleBack}
-            className="text-white bg-black/50 p-2 rounded-full hover:bg-black/70 transition-colors"
+            className="text-white cursor-pointer bg-black/50 p-2 rounded-full hover:bg-black/70 transition-colors"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />

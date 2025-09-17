@@ -1,7 +1,6 @@
 // app/state/movieAtoms.ts
 import { atom } from 'jotai';
 
-// TMDB API configuration
 const API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY;
 const BASE_URL = 'https://api.themoviedb.org/3';
 
@@ -33,7 +32,7 @@ export const moviesLoadingAtom = atom(false);
 export const searchLoadingAtom = atom(false);
 export const trendingLoadingAtom = atom(false);
 
-// Action atoms (write-only)
+// Action atoms 
 export const fetchMoviesAtom = atom(
   null,
   async (get, set, page: number = 1) => {

@@ -365,7 +365,7 @@ export default function DashboardPage() {
             <div className="grid grid-cols-3 gap-6">
               <div>
                 <div className="text-3xl font-extrabold text-purple-400 mb-1">
-                  {movies.length}+
+                  {movies.length * getTotalPages()}
                 </div>
                 <div className="text-sm text-gray-400">
                   Movies Available
