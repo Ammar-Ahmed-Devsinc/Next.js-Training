@@ -4,7 +4,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from './providers/authProvider';
-import { CircularProgress, Box, Typography } from '@mui/material';
 
 export default function HomePage() {
   const router = useRouter();
@@ -24,35 +23,17 @@ export default function HomePage() {
   // Show loading spinner while checking auth state
   if (isLoading) {
     return (
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '100vh',
-          flexDirection: 'column',
-          gap: 2
-        }}
-      >
-        <CircularProgress size={60} />
-        <Typography variant="h6" color="text.secondary">
-          Checking authentication...
-        </Typography>
-      </Box>
+      <div className="flex justify-center items-center min-h-screen flex-col gap-4">
+        <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+        <p className="text-gray-600 text-lg font-medium">Checking authentication...</p>
+      </div>
     );
   }
 
   // Show nothing while redirecting
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh'
-      }}
-    >
-      <CircularProgress />
-    </Box>
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+    </div>
   );
 }

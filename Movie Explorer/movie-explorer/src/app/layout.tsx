@@ -1,7 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from './providers/themeProvider';
+
 import { AuthProvider } from './providers/authProvider';
 import { JotaiProvider } from './providers/jotaiProvider';
 
@@ -25,11 +25,11 @@ export default function RootLayout({
       </head>
       <body className={inter.className} style={{ margin: 0, padding: 0 }}>
         <JotaiProvider>
-          <ThemeProvider>
+          
             <AuthProvider>
               {children}
             </AuthProvider>
-          </ThemeProvider>
+       
         </JotaiProvider>
       </body>
     </html>
